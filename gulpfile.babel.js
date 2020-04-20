@@ -55,6 +55,8 @@ const serverCopyAndWatchGlob = [
 // tasks
 gulp.task("serve", () => {
 	browser.init({
+		ui: false,
+		port: 3000,
 		server: {baseDir: "./"},
 		options: {ignored: "./dev/**/*"}
 	});
